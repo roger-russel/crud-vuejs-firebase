@@ -1,5 +1,7 @@
 # crud-vuejs-firebase
 
+![Travis:Master](https://travis-ci.org/roger-russel/crud-vuejs-firebase.svg?branch=master "Travis Master")
+
 > A simple crud made with firebase and vuejs
 
 ## Build Setup
