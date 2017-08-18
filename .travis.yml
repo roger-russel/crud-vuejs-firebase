@@ -7,3 +7,6 @@ before_script:
   - docker exec -it crud-vuejs-firebase bash -c "npm install yarn && yarn install"
 script:
   - docker exec -it crud-vuejs-firebase bash -c 'echo "hellow word" || exit $?'
+cache:
+  directories:
+    - node_modules

@@ -8,4 +8,3 @@ services:
       - 8080:8080
     volumes:
       - ./:/var/www
-    command: npm run dev || tail -f /dev/null

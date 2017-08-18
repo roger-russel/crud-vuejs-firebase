@@ -13,14 +13,12 @@
 docker-compose build
 docker-compose up
 
+# Into another terminal run
+docker exec -it crud-vuejs-firebase bash
 
 # install dependencies
 npm install yarn
 yarn install
-
-# Into another terminal run
-
-docker exec -it crud-vuejs-firebase bash
 
 # After enter inside docker container run this commands bellow
 # serve with hot reload at localhost:8080

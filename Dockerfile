@@ -12,3 +12,5 @@ RUN apt-get update && apt-get install -y \
   && rm -rf /var/lib/apt/lists/*
 
 RUN npm install -g vue-cli
+
+CMD npm run dev || tail -f /dev/null
