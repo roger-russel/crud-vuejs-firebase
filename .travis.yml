@@ -1,0 +1,9 @@
+language: javascript
+sudo: required
+services: docker
+before_script:
+  - docker-compose build
+  - docker-compose up -d
+  - docker exec -it crud-vuejs-firebase bash -c "npm install yarn && yarn install"
+script:
+  - docker exec -it crud-vuejs-firebase bash -c 'echo "hellow word" || exit $?'
